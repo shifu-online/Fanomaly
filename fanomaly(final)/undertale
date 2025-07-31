@@ -1,0 +1,231 @@
+/*
+
+<?php include('header.php'); ?>
+<link rel="stylesheet" href="quiz.css" />
+<main class="test-page container">
+  <h2>Undertale Quiz</h2>
+  
+  <div id="timer">Time Left: <span id="time-left">300</span> seconds</div>
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+  
+  <form id="quiz-form">
+    <!-- Question 1 -->
+    <div class="question" data-correct="A">
+      <p>1. Who is the main protagonist of Undertale?</p>
+      <div class="options">
+        <button type="button" class="option">A. Frisk</button>
+        <button type="button" class="option">B. Flowey</button>
+        <button type="button" class="option">C. Sans</button>
+        <button type="button" class="option">D. Papyrus</button>
+      </div>
+    </div>
+    <!-- Question 2 -->
+    <div class="question" data-correct="A">
+      <p>2. Which character serves as a motherly figure in Undertale?</p>
+      <div class="options">
+        <button type="button" class="option">A. Toriel</button>
+        <button type="button" class="option">B. Undyne</button>
+        <button type="button" class="option">C. Alphys</button>
+        <button type="button" class="option">D. Asgore</button>
+      </div>
+    </div>
+    <!-- Question 3 -->
+    <div class="question" data-correct="B">
+      <p>3. Which character is known for his lazy humor and pun-filled jokes?</p>
+      <div class="options">
+        <button type="button" class="option">A. Papyrus</button>
+        <button type="button" class="option">B. Sans</button>
+        <button type="button" class="option">C. Flowey</button>
+        <button type="button" class="option">D. Asriel</button>
+      </div>
+    </div>
+    <!-- Question 4 -->
+    <div class="question" data-correct="A">
+      <p>4. Who is Papyrus' brother?</p>
+      <div class="options">
+        <button type="button" class="option">A. Sans</button>
+        <button type="button" class="option">B. Undyne</button>
+        <button type="button" class="option">C. Alphys</button>
+        <button type="button" class="option">D. Asgore</button>
+      </div>
+    </div>
+    <!-- Question 5 -->
+    <div class="question" data-correct="B">
+      <p>5. Who is the deceptive villain that takes the form of a flower?</p>
+      <div class="options">
+        <button type="button" class="option">A. Chara</button>
+        <button type="button" class="option">B. Flowey</button>
+        <button type="button" class="option">C. Asriel</button>
+        <button type="button" class="option">D. Toriel</button>
+      </div>
+    </div>
+    <!-- Question 6 -->
+    <div class="question" data-correct="A">
+      <p>6. Which skeletal duo is known for their constant jokes and puns?</p>
+      <div class="options">
+        <button type="button" class="option">A. Sans and Papyrus</button>
+        <button type="button" class="option">B. Sans and Undyne</button>
+        <button type="button" class="option">C. Papyrus and Undyne</button>
+        <button type="button" class="option">D. Sans and Alphys</button>
+      </div>
+    </div>
+    <!-- Question 7 -->
+    <div class="question" data-correct="B">
+      <p>7. Which character is a passionate fish-like warrior?</p>
+      <div class="options">
+        <button type="button" class="option">A. Asgore</button>
+        <button type="button" class="option">B. Undyne</button>
+        <button type="button" class="option">C. Alphys</button>
+        <button type="button" class="option">D. Flowey</button>
+      </div>
+    </div>
+    <!-- Question 8 -->
+    <div class="question" data-correct="C">
+      <p>8. Who runs the science lab in the Underground?</p>
+      <div class="options">
+        <button type="button" class="option">A. Toriel</button>
+        <button type="button" class="option">B. Sans</button>
+        <button type="button" class="option">C. Alphys</button>
+        <button type="button" class="option">D. Asgore</button>
+      </div>
+    </div>
+    <!-- Question 9 -->
+    <div class="question" data-correct="B">
+      <p>9. Who is the king of the Underground?</p>
+      <div class="options">
+        <button type="button" class="option">A. Flowey</button>
+        <button type="button" class="option">B. Asgore</button>
+        <button type="button" class="option">C. Chara</button>
+        <button type="button" class="option">D. Undyne</button>
+      </div>
+    </div>
+    <!-- Question 10 -->
+    <div class="question" data-correct="A">
+      <p>10. What is the signature healing item in Undertale?</p>
+      <div class="options">
+        <button type="button" class="option">A. Butterscotch Pie</button>
+        <button type="button" class="option">B. Chocolate Bar</button>
+        <button type="button" class="option">C. Healing Potion</button>
+        <button type="button" class="option">D. Soul Medallion</button>
+      </div>
+    </div>
+    <!-- Question 11 -->
+    <div class="question" data-correct="B">
+      <p>11. Which route in Undertale encourages sparing all enemies?</p>
+      <div class="options">
+        <button type="button" class="option">A. Genocide</button>
+        <button type="button" class="option">B. Pacifist</button>
+        <button type="button" class="option">C. Neutral</button>
+        <button type="button" class="option">D. Aggressive</button>
+      </div>
+    </div>
+    <!-- Question 12 -->
+    <div class="question" data-correct="B">
+      <p>12. Who serves as the final judge in the Genocide route?</p>
+      <div class="options">
+        <button type="button" class="option">A. Papyrus</button>
+        <button type="button" class="option">B. Sans</button>
+        <button type="button" class="option">C. Asgore</button>
+        <button type="button" class="option">D. Flowey</button>
+      </div>
+    </div>
+    <!-- Question 13 -->
+    <div class="question" data-correct="B">
+      <p>13. Which character's theme, "Megalovania," is widely recognized?</p>
+      <div class="options">
+        <button type="button" class="option">A. Papyrus</button>
+        <button type="button" class="option">B. Sans</button>
+        <button type="button" class="option">C. Toriel</button>
+        <button type="button" class="option">D. Undyne</button>
+      </div>
+    </div>
+    <!-- Question 14 -->
+    <div class="question" data-correct="C">
+      <p>14. Which character teaches the importance of mercy in the Underground?</p>
+      <div class="options">
+        <button type="button" class="option">A. Sans</button>
+        <button type="button" class="option">B. Papyrus</button>
+        <button type="button" class="option">C. Toriel</button>
+        <button type="button" class="option">D. Flowey</button>
+      </div>
+    </div>
+    <!-- Question 15 -->
+    <div class="question" data-correct="A">
+      <p>15. Which song is famously associated with the Genocide route?</p>
+      <div class="options">
+        <button type="button" class="option">A. Megalovania</button>
+        <button type="button" class="option">B. Bonetrousle</button>
+        <button type="button" class="option">C. Hopes and Dreams</button>
+        <button type="button" class="option">D. Spider Dance</button>
+      </div>
+    </div>
+    <!-- Question 16 -->
+    <div class="question" data-correct="B">
+      <p>16. Which character is depicted with a blue scarf and laid-back attitude?</p>
+      <div class="options">
+        <button type="button" class="option">A. Papyrus</button>
+        <button type="button" class="option">B. Sans</button>
+        <button type="button" class="option">C. Undyne</button>
+        <button type="button" class="option">D. Alphys</button>
+      </div>
+    </div>
+    <!-- Question 17 -->
+    <div class="question" data-correct="A">
+      <p>17. Which character is known for his over-the-top enthusiasm and love for puzzles?</p>
+      <div class="options">
+        <button type="button" class="option">A. Papyrus</button>
+        <button type="button" class="option">B. Sans</button>
+        <button type="button" class="option">C. Toriel</button>
+        <button type="button" class="option">D. Undyne</button>
+      </div>
+    </div>
+    <!-- Question 18 -->
+    <div class="question" data-correct="A">
+      <p>18. What is the term used for sparing enemies in Undertale?</p>
+      <div class="options">
+        <button type="button" class="option">A. Mercy</button>
+        <button type="button" class="option">B. Forgiveness</button>
+        <button type="button" class="option">C. Redemption</button>
+        <button type="button" class="option">D. Pacifism</button>
+      </div>
+    </div>
+    <!-- Question 19 -->
+    <div class="question" data-correct="A">
+      <p>19. Which character opens with the line "It's a beautiful day outside..."?</p>
+      <div class="options">
+        <button type="button" class="option">A. Flowey</button>
+        <button type="button" class="option">B. Sans</button>
+        <button type="button" class="option">C. Toriel</button>
+        <button type="button" class="option">D. Undyne</button>
+      </div>
+    </div>
+    <!-- Question 20 -->
+    <div class="question" data-correct="B">
+      <p>20. Which route in Undertale involves eliminating every enemy?</p>
+      <div class="options">
+        <button type="button" class="option">A. Pacifist</button>
+        <button type="button" class="option">B. Genocide</button>
+        <button type="button" class="option">C. Neutral</button>
+        <button type="button" class="option">D. True Pacifist</button>
+      </div>
+    </div>
+  </form>
+  
+  <!-- Results Section -->
+  <section id="results">
+    <div class="container">
+      <h2>Your Results</h2>
+      <p id="score-summary">You scored X out of 30!</p>
+      <div class="results-actions">
+        <button onclick="retakeTest()" class="btn">Retake Test</button>
+        <a href="anime.php" class="btn">Browse Other Quizzes</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<?php include('footer.php'); ?>
+<script src="quiz.js" defer></script>
+*/
