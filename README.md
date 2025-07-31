@@ -1,11 +1,14 @@
 # Fanomaly
 
-A conceptual web platform built with PHP, HTML, and JavaScript with a local database.
+A conceptual full-stack web platform built with PHP, HTML, and JavaScript with a local database.
 
 ## Features
-- PHP-based backend with local database
-- Form handling and basic user interaction
-- Designed as a full-stack experiment for learning project flow
+- PHP backend with local database connection
+- Front-end design using HTML and JavaScript
+- Form handling and user interaction logic
+- Experimental layout and prototype-level validation
 
 ## Status
-Prototype — useful for showing understanding of full-stack logic with minimal tooling.
+Prototype / Work in Progress
+
+This project was built as part of my self-learning journey to understand full-stack application flow, including both front-end behavior and back-end integration.
